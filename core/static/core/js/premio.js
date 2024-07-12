@@ -1,25 +1,37 @@
-document.addEventListener("DOMContentLoaded", function() {
-  const productContainer = document.getElementById('product-container');
-  
-  fetch('https://fakestoreapi.com/products')
-      .then(response => response.json())
-      .then(products => {
-          products.forEach(product => {
-              const productCard = `
-                  <div class="col-md-4 mb-4">
-                      <div class="card h-100">
-                          <img class="card-img-top" src="${product.image}" alt="Product Image">
-                          <div class="card-body">
-                              <h5 class="card-title">${product.title}</h5>
-                              <p class="card-text">${product.description.substring(0, 100)}...</p>
-                              <p class="card-price">Price: $${product.price}</p>
-                              <a href="#" class="btn btn-primary">Add to Cart</a>
-                          </div>
-                      </div>
-                  </div>
-              `;
-              productContainer.innerHTML += productCard;
-          });
-      })
-      .catch(error => console.error('Error fetching the products:', error));
+
+document.addEventListener('DOMContentLoaded', function() {
+
+    fetch('http://fakestoreapi.com/products')
+        .then(response => response.json()) 
+        .then(data => {
+
+            const productContainer = document.getElementById('product-container');
+
+
+            productContainer.innerHTML = '';
+
+
+            data.forEach(item => {
+                
+                const cardHTML = `
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-3 text-center">
+                        <div class="card h-100" style="width: 100%;">
+                            <img src="${item.image}" class="card-img-top pt-3" style="width: 475px; height: 555px; object-fit: cover; margin: auto;">
+                            <div class="card-body">
+                                <h5 class="card-title">${item.title}</h5>
+                                <h6>${item.category}</h6>
+                                <p class="card-text">${item.description.substring(0, 100)}...</p>
+                                <p class="card-price">Price: $${item.price}</p>
+                                <a class="btn btn-primary" target="_blank" href="https://www.amazon.com/s?k=${item.title}">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                `;
+
+                productContainer.innerHTML += cardHTML;
+            });
+
+        })
+        .catch(error => console.error('Error al obtener los datos:', error));
+
 });
