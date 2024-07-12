@@ -1,0 +1,377 @@
+#container-juegos .card-img-top {
+  width: 100%; /* Ajusta el ancho al 100% del contenedor */
+  height: 448px; /* Establece un alto fijo para todas las imágenes */
+  object-fit: cover; /* Ajusta el tamaño de la imagen para que cubra todo el contenedor */
+}
+
+#container-juegos .card {
+  height: 100%; 
+}
+
+#container-juegos .card:hover {
+  box-shadow: 0 0 10px 5px rgba(128, 0, 128, 0.5);
+}
+footer {
+  text-align: center;
+  margin-top: 20px; 
+}
+.carousel-item img {
+  width: 400px;
+  height: 550px;
+}
+.carousel {
+  #container-juegos .card-img-top {
+  width: 100%; /* Ajusta el ancho al 100% del contenedor */
+  height: 448px; /* Establece un alto fijo para todas las imágenes */
+  object-fit: cover; /* Ajusta el tamaño de la imagen para que cubra todo el contenedor */
+}
+
+#container-juegos .card {
+  height: 100%; 
+}
+
+#container-juegos .card:hover {
+  box-shadow: 0 0 10px 5px rgba(128, 0, 128, 0.5);
+}
+footer {
+  text-align: center;
+  margin-top: 20px; 
+}
+.carousel-item img {
+  width: 400px;
+  height: 550px;
+}
+.carousel {
+  margin: 20px; /* Espacio entre el carrusel y las tarjetas */
+}
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: transparent; /* Hacer transparente el fondo */
+    border: none; /* Eliminar borde */
+}
+/* Estilo para el label de Correo electrónico */
+
+
+/* Estilo para el botón de Ingresar */
+#login-button {
+  width: 50%; /* Ocupa todo el ancho disponible */
+  padding: 10px; /* Agrega espacio interno al botón */
+  border-radius: 5px; /* Agrega esquinas redondeadas */
+  border: none; /* Elimina el borde */
+  background-color: #007bff; /* Color de fondo */
+  color: #fff; /* Color del texto */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  display: block; /* Hace que el botón ocupe todo el ancho disponible */
+  margin: 0 auto; /* Centra horizontalmente */
+}
+
+/* Estilos para el contenedor de productos */
+#productos-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+.producto {
+  border: 2px solid black; 
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  margin: 10px;
+}
+
+.producto h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.producto p {
+  margin-bottom: 5px;
+}
+
+.producto img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+
+.producto hr {
+  margin-top: 20px;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+.container-mis-datos {
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  height: 100vh; /* Altura del viewport */
+}
+/* Estilos para la tabla */
+#tabla_mis_datos {
+  border: 2px solid black; /* Borde de 2px de ancho y color negro */
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  width: 80%; /* Ancho de la tabla */
+}
+th, td {
+  padding: 10px;
+}
+/* Estilos para los botones */
+.boton-container {
+  text-align: center;
+}
+
+.boton {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.boton:hover {
+  background-color: #0056b3;
+}
+
+#container-ropa .card {
+  height: 100%; /* Establece una altura del 100% para las cartas de la ropa */
+}
+
+#container-ropa .card:hover {
+  box-shadow: 0 0 10px 5px rgba(128, 0, 128, 0.5); /* Agrega una sombra al hacer hover */
+}
+
+/* Estilos para la tabla */
+.ficha-container {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Estilos para las celdas de la tabla */
+.ficha-container td {
+  vertical-align: top;
+  padding: 10px;
+}
+
+/* Estilo para la imagen */
+#imagen_juego {
+  width: 475px;
+  height: 555px;
+}
+
+.green-text {
+  color: green;
+}
+
+.blue-text {
+  color: blue;
+}
+
+.red-text {
+  color: red;
+}
+
+#precio-subscripto{
+  font-size: 18px;
+}
+#precio{
+  font-size: 20px;
+}
+body {
+  margin: 20px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+  border: 1px solid #ddd; 
+  margin: 20px;
+}
+
+label {
+  font-weight: bold;
+}
+.error{
+  color: red;
+  font-weight: bold;
+}
+.offer-container {
+  display: flex;
+  align-items: center;
+}
+.offer-text {
+  white-space: pre-line; /* Mantiene los saltos de línea */
+  margin-left: 20px; /* Espacio entre el botón y el texto */
+} /* Espacio entre el carrusel y las tarjetas */
+}
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: transparent; /* Hacer transparente el fondo */
+    border: none; /* Eliminar borde */
+}
+/* Estilo para el label de Correo electrónico */
+
+
+/* Estilo para el botón de Ingresar */
+#login-button {
+  width: 50%; /* Ocupa todo el ancho disponible */
+  padding: 10px; /* Agrega espacio interno al botón */
+  border-radius: 5px; /* Agrega esquinas redondeadas */
+  border: none; /* Elimina el borde */
+  background-color: #007bff; /* Color de fondo */
+  color: #fff; /* Color del texto */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  display: block; /* Hace que el botón ocupe todo el ancho disponible */
+  margin: 0 auto; /* Centra horizontalmente */
+}
+
+/* Estilos para el contenedor de productos */
+#productos-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+.producto {
+  border: 2px solid black; 
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  margin: 10px;
+}
+
+.producto h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.producto p {
+  margin-bottom: 5px;
+}
+
+.producto img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+
+.producto hr {
+  margin-top: 20px;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+.container-mis-datos {
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  height: 100vh; /* Altura del viewport */
+}
+/* Estilos para la tabla */
+#tabla_mis_datos {
+  border: 2px solid black; /* Borde de 2px de ancho y color negro */
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  width: 80%; /* Ancho de la tabla */
+}
+th, td {
+  padding: 10px;
+}
+/* Estilos para los botones */
+.boton-container {
+  text-align: center;
+}
+
+.boton {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.boton:hover {
+  background-color: #0056b3;
+}
+
+#container-ropa .card {
+  height: 100%; /* Establece una altura del 100% para las cartas de la ropa */
+}
+
+#container-ropa .card:hover {
+  box-shadow: 0 0 10px 5px rgba(128, 0, 128, 0.5); /* Agrega una sombra al hacer hover */
+}
+
+/* Estilos para la tabla */
+.ficha-container {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Estilos para las celdas de la tabla */
+.ficha-container td {
+  vertical-align: top;
+  padding: 10px;
+}
+
+/* Estilo para la imagen */
+#imagen_juego {
+  width: 475px;
+  height: 555px;
+}
+
+.green-text {
+  color: green;
+}
+
+.blue-text {
+  color: blue;
+}
+
+.red-text {
+  color: red;
+}
+
+#precio-subscripto{
+  font-size: 18px;
+}
+#precio{
+  font-size: 20px;
+}
+body {
+  margin: 20px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+  border: 1px solid #ddd; 
+}
+
+label {
+  font-weight: bold;
+}
+.error{
+  color: red;
+  font-weight: bold;
+}
+.offer-container {
+  display: flex;
+  align-items: center;
+}
+.offer-text {
+  white-space: pre-line; /* Mantiene los saltos de línea */
+  margin-left: 20px; /* Espacio entre el botón y el texto */
+}
+
+.table-hover .letra-boleta-anulada td {
+  color: red !important;
+  font-weight: bold !important;
+}

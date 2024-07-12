@@ -1,0 +1,46 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% load custom_filters %}
+
+{% block content %}
+    <h1 class="text-center">Ficha del Juego</h1>
+    <table class="ficha-container">
+        <tr>
+            <td>
+                <div class="col-sm-12 cold-md-4 border border-3">
+                    <img src="/media/{{ imagen }}" style="width: 475px; height: 555px;">
+                </div>
+            </td>
+            <td>
+                <div class="col-sm-12 cold-md-6">
+                    <h2 class="fw-bold mb-3">
+                        {{ nombre }}
+                    </h2>
+
+                    <h3 class="fw-bold">
+                        {{ html_estado|safe }} 
+                    </h3>
+                    <h4 class="mb-3">
+                        {{ html_precio|safe }}
+                    </h4>
+                    <h5>
+                        <div class="mb-3">
+                            Descripción:
+                        </div>
+                        {{ descripcion }}
+                    </h5>
+                    <p>
+                        {{ html_stock|safe }}
+                    </p>
+                    <input type="hidden" id="accion">
+                    <a href="{% url 'carrito' %}" class="btn btn-primary ancho-160px">
+                        Comprar ahora
+                    </a>
+                    <a href="{% url 'agregar_producto_al_carrito' id%}" class="btn btn-success">
+                        Agregar al carrito
+                    </a>
+                </div>
+            </td>
+        </tr>
+    </table>
+{% endblock content %}

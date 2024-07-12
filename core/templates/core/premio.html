@@ -1,0 +1,15 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% load custom_filters %}
+
+{% block content %}
+<div class="container">
+    <div id="product-list" class="row mt-4">
+        <!-- Aquí se añadirán dinámicamente las tarjetas de producto -->
+    </div>
+</div>
+{% endblock content %}
+
+{% block script %}
+<script src="{% static 'core/js/premio.js' %}"></script>
+{% endblock script %}

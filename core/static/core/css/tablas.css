@@ -1,0 +1,6 @@
+.text-center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Alinea los elementos a la derecha */
+    margin-top: 20px; /* Margen hacia arriba de 20px */
+}
